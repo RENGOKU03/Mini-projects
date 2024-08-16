@@ -1,0 +1,60 @@
+:root{
+ --background: white;
+ --text-primary: black;
+ --button-bg: black;
+ --button-text: white;
+}
+[theme-selected = 'dark']{
+ --background: black;
+ --text-primary: white;
+ --button-bg: white;
+ --button-text: black;
+}
+.main-div{
+ height: 100vh;
+ scroll-snap-align: start;
+ background-color: var(--background);
+ font-size: 20;
+ transition: all 0.5s;
+ overflow: hidden;
+}
+
+.container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+gap: 40px;
+align-items: center;
+}
+.container h1{
+ font-weight: 700;
+ font-size: 50px;
+ text-align: center;
+ padding: 10px;
+ color: var(--text-primary);
+}
+.container button{
+ padding: 10px 12px;
+ background-color: var(--button-bg);
+ color: var(--button-text);
+ font-size: 30px;
+ width: fit-content;
+ border-radius: 40px;
+ border: none;
+}
+
+::-webkit-scrollbar {
+ width: 15px;
+ height: 20px; /* For horizontal scrollbar */
+}
+::-webkit-scrollbar-track {
+ background: gray;
+ border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+ background: white; /* Thumb color */
+ border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+ background: red; /* Thumb color on hover */
+}

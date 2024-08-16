@@ -14,7 +14,8 @@ const Star = ({ len = 10 }) => {
     setHover(rating);
   };
   return (
-    <div className="h-screen bg-red-400 grid items-center snap-start">
+    <div className="h-screen bg-red-400 flex flex-col justify-center gap-32 snap-start">
+      <h1 className="text-5xl font-semibold text-center">Star Rating</h1>
       <div className="w-full flex justify-center gap-2">
         {[...Array(len)].map((item, index) => {
           index += 1;

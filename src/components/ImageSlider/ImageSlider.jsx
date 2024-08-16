@@ -57,7 +57,7 @@ const ImageSlider = ({ limit = 5, URl, page = 1 }) => {
         </h1>
         {images && images.length
           ? images.map((imageItem, index) => (
-              <div className="">
+              <div className="" key={index}>
                 <img
                   key={imageItem.id}
                   className={`object-cover w-full h-full rounded-xl  ${
@@ -72,7 +72,7 @@ const ImageSlider = ({ limit = 5, URl, page = 1 }) => {
         <div className="flex gap-3 justify-center items-center absolute left-[20%] bottom-[12%] p-5 bg-transparent/50 rounded-xl ">
           {images && images.length
             ? images.map((imageItem, index) => (
-                <button className="hover:animate-ping">
+                <button className="hover:animate-ping" key={index}>
                   <FaCircle
                     style={{
                       backgroundColor: "white",
