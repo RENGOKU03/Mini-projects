@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import Card from "./Card";
+import Loading from "../Loading";
 
 const Profile = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [userName, setUserName] = useState("richard");
+  const [userName, setUserName] = useState("");
   const inputref = useRef("");
   const handelOnSearch = () => {
     setUserName(inputref.current.value);
@@ -24,11 +25,7 @@ const Profile = () => {
   }, [userName]);
 
   if (loading) {
-    return (
-      <div className="h-screen bg-black text-7xl text-white pt-[20%] text-center ">
-        Loading....
-      </div>
-    );
+    return <Loading />;
   }
 
   return (

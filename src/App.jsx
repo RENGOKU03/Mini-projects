@@ -10,12 +10,13 @@ import Tabs from "./components/Tabs/Tabs";
 import "./index.css";
 import ModalToggle from "./components/Modal/ModalToggle";
 import Profile from "./components/Github-profile-finder/profile";
+import Search from "./components/SearchAutoComplete/Search";
 
 function App() {
   return (
     <>
       <div className="snap-mandatory snap-y overflow-y-scroll h-screen">
-        {/* <Accordian />
+        <Accordian />
         <Star />
         <ImageSlider
           URl={"https://picsum.photos/v2/list"}
@@ -29,8 +30,9 @@ function App() {
         <QrCodeMaker />
         <DarkMode />
         <Tabs />
-        <ModalToggle /> */}
+        <ModalToggle />
         <Profile />
+        <Search />
       </div>
     </>
   );

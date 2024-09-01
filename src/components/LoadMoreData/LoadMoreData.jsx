@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import Loading from "../Loading";
 
 const LoadMoreData = () => {
   const [loading, setLoading] = useState(false);
@@ -37,7 +38,7 @@ const LoadMoreData = () => {
   }, [products]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
   return (
     <div className=" bg-red-700 flex flex-col items-center gap-5">

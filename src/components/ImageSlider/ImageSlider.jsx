@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaCircle } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import Loading from "../Loading";
 
 const ImageSlider = ({ limit = 5, URl, page = 1 }) => {
   const [images, setImages] = useState([]);
@@ -36,11 +37,7 @@ const ImageSlider = ({ limit = 5, URl, page = 1 }) => {
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   }
   if (loading) {
-    return (
-      <div>
-        <h1>Image is Loading</h1>
-      </div>
-    );
+    return <Loading />;
   }
   if (errorMsg !== null) {
     return (
