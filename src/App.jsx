@@ -11,12 +11,13 @@ import "./index.css";
 import ModalToggle from "./components/Modal/ModalToggle";
 import Profile from "./components/Github-profile-finder/profile";
 import Search from "./components/SearchAutoComplete/Search";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 
 function App() {
   return (
     <>
       <div className="snap-mandatory snap-y overflow-y-scroll h-screen">
-        <Accordian />
+        {/* <Accordian />
         <Star />
         <ImageSlider
           URl={"https://picsum.photos/v2/list"}
@@ -32,7 +33,8 @@ function App() {
         <Tabs />
         <ModalToggle />
         <Profile />
-        <Search />
+        <Search /> */}
+        <TicTacToe />
       </div>
     </>
   );
