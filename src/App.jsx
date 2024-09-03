@@ -12,6 +12,8 @@ import ModalToggle from "./components/Modal/ModalToggle";
 import Profile from "./components/Github-profile-finder/profile";
 import Search from "./components/SearchAutoComplete/Search";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
+import CustomHook from "./components/UseFetch/CustomHook";
+import OutsideClick from "./components/ClickOutsideClose/OutsideClick";
 
 function App() {
   return (
@@ -33,8 +35,10 @@ function App() {
         <Tabs />
         <ModalToggle />
         <Profile />
-        <Search /> */}
+        <Search />
         <TicTacToe />
+        <CustomHook /> */}
+        <OutsideClick />
       </div>
     </>
   );
