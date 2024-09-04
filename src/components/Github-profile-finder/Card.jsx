@@ -15,10 +15,7 @@ const Card = ({ userData }) => {
     <div className="h-[500px] bg-teal-900 text-white pt-5 text-2xl font-semibold mt-5">
       <div>
         <img
-          src={
-            avatar_url ||
-            "https://avatars.githubusercontent.com/u/101349886?v=4&size=460"
-          }
+          src={avatar_url}
           alt="User-img"
           className="h-60 rounded-xl m-auto"
         />
@@ -28,7 +25,7 @@ const Card = ({ userData }) => {
           href={`https://github.com/${login}`}
           className="text-3xl text-blue-500 hover:cursor-pointer"
         >
-          {name || login || "Chetan"}
+          {name || login}
         </a>
         <p>
           User joined on{" "}

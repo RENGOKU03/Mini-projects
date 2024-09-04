@@ -16,7 +16,7 @@ const Tabs = () => {
       content: <div>Content Of tab 3</div>,
     },
   ];
-  return <Tab tabsContent={tabs} onChange={handelOnClick} />;
+  return <Tab tabsContent={tabs} />;
 };
 
 export default Tabs;

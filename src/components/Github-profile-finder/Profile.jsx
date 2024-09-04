@@ -5,10 +5,11 @@ import Loading from "../Loading";
 const Profile = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [userName, setUserName] = useState("chetan");
+  const [userName, setUserName] = useState("richard");
   const inputref = useRef("");
   const handelOnSearch = () => {
     setUserName(inputref.current.value);
+    inputref.current.value = "";
   };
   async function fetchData() {
     setLoading(true);
@@ -21,7 +22,9 @@ const Profile = () => {
     }
   }
   useEffect(() => {
-    fetchData();
+    if (userName) {
+      fetchData();
+    }
   }, [userName]);
 
   if (loading) {
