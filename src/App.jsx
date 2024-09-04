@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div className="snap-mandatory snap-y overflow-y-scroll h-screen">
-        {/* <Accordian />
+        <Accordian />
         <Star />
         <ImageSlider
           URl={"https://picsum.photos/v2/list"}
@@ -42,7 +42,7 @@ function App() {
         <CustomHook />
         <OutsideClick />
         <Scroll />
-        <ScrollToSection /> */}
+        <ScrollToSection />
       </div>
     </>
   );
