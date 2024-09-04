@@ -7,7 +7,6 @@ const DarkMode = () => {
   function handelToggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");
   }
-  console.log(theme);
   return (
     <div className="main-div" theme-selected={theme}>
       <div className="container">

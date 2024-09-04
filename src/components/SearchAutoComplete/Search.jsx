@@ -48,7 +48,7 @@ const Search = () => {
   useEffect(() => {
     fetchUserData();
   }, []);
-  console.log(users);
+
   return (
     <div className="h-screen snap-start bg-gray-400 text-white ">
       {loading ? (
