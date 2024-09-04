@@ -5,7 +5,7 @@ import Loading from "../Loading";
 const Profile = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [userName, setUserName] = useState("richard");
+  const [userName, setUserName] = useState("");
   const inputref = useRef("");
   const handelOnSearch = () => {
     setUserName(inputref.current.value);
