@@ -61,7 +61,7 @@ const TicTacToe = () => {
   }, [squares, isXtrun]);
 
   return (
-    <div className="h-screen bg-pink-700 ">
+    <div className="h-screen bg-pink-700 snap-start">
       <h1 className="text-white text-5xl text-center p-10">Tic Tac Toe Game</h1>
       <div>
         <div className="flex justify-center">

@@ -1,3 +1,4 @@
+import "./index.css";
 import Accordian from "./components/Accordian/Accordian";
 import DarkMode from "./components/DarkMode/DarkMode";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
@@ -7,13 +8,14 @@ import Star from "./components/StarRating/Star";
 import menus from "./components/TreeView/Data";
 import TreeView from "./components/TreeView/TreeView";
 import Tabs from "./components/Tabs/Tabs";
-import "./index.css";
 import ModalToggle from "./components/Modal/ModalToggle";
 import Profile from "./components/Github-profile-finder/profile";
 import Search from "./components/SearchAutoComplete/Search";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import CustomHook from "./components/UseFetch/CustomHook";
 import OutsideClick from "./components/ClickOutsideClose/OutsideClick";
+import Scroll from "./components/ScrollToTopAndBottom/Scroll";
+import ScrollToSection from "./components/ScrollToTopAndBottom/ScrollToSection";
 
 function App() {
   return (
@@ -37,8 +39,10 @@ function App() {
         <Profile />
         <Search />
         <TicTacToe />
-        <CustomHook /> */}
+        <CustomHook />
         <OutsideClick />
+        <Scroll />
+        <ScrollToSection /> */}
       </div>
     </>
   );

@@ -6,7 +6,7 @@ const OutsideClick = () => {
   const ref = useRef();
   UseOnClickOutside(ref, () => setShowContent(false));
   return (
-    <div className="h-screen bg-amber-300 font-semibold flex flex-col items-center">
+    <div className="h-screen bg-amber-300 font-semibold flex flex-col items-center snap-start ">
       <h1 className=" text-5xl text-center p-10">Onclick Outside the Box</h1>
 
       {!showContent ? (

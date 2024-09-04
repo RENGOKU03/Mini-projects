@@ -34,7 +34,7 @@ const LoadMoreData = () => {
   }, [count]);
 
   useEffect(() => {
-    if (products && products.length === 100) setDisableButton(true);
+    if (products && products.length === 50) setDisableButton(true);
   }, [products]);
 
   if (loading) {
@@ -65,7 +65,7 @@ const LoadMoreData = () => {
           onClick={handleLoadMoreButton}
           className="text-2xl tracking-wide font-semibold px-4 py-2 bg-yellow-300 rounded-xl min-w-96"
         >
-          {disableButton ? "You Have Reached 100 products" : "Load More"}
+          {disableButton ? "You Have Reached 50 products" : "Load More"}
         </button>
       </div>
     </div>
