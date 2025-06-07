@@ -10,17 +10,15 @@ import TreeView from "./components/TreeView/TreeView";
 import Tabs from "./components/Tabs/Tabs";
 import ModalToggle from "./components/Modal/ModalToggle";
 import Profile from "./components/Github-profile-finder/profile";
-import Search from "./components/SearchAutoComplete/Search";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
-import CustomHook from "./components/UseFetch/CustomHook";
 import OutsideClick from "./components/ClickOutsideClose/OutsideClick";
-import Scroll from "./components/ScrollToTopAndBottom/Scroll";
-import ScrollToSection from "./components/ScrollToTopAndBottom/ScrollToSection";
+import UserSearchAutocomplete from "./components/SearchAutoComplete/Search";
+
 
 function App() {
   return (
     <>
-      <div className="snap-mandatory snap-y overflow-y-scroll h-screen">
+      <div className="">
         <Accordian />
         <Star />
         <ImageSlider
@@ -28,7 +26,7 @@ function App() {
           page={1}
           limit={"10"}
         />
-        <div className="snap-start">
+        <div >
           <LoadMoreData />
         </div>
         <TreeView menus={menus} />
@@ -37,12 +35,9 @@ function App() {
         <Tabs />
         <ModalToggle />
         <Profile />
-        <Search />
+        <UserSearchAutocomplete />
         <TicTacToe />
-        <CustomHook />
         <OutsideClick />
-        <Scroll />
-        <ScrollToSection />
       </div>
     </>
   );
