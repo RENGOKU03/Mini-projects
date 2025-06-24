@@ -9,11 +9,10 @@ import menus from "./components/TreeView/Data";
 import TreeView from "./components/TreeView/TreeView";
 import Tabs from "./components/Tabs/Tabs";
 import ModalToggle from "./components/Modal/ModalToggle";
-import Profile from "./components/Github-profile-finder/profile";
 import TicTacToe from "./components/TicTacToe/TicTacToe";
 import OutsideClick from "./components/ClickOutsideClose/OutsideClick";
 import UserSearchAutocomplete from "./components/SearchAutoComplete/Search";
-
+import Profile from "./components/Github-profile-finder/Profile";
 
 function App() {
   return (
@@ -26,7 +25,7 @@ function App() {
           page={1}
           limit={"10"}
         />
-        <div >
+        <div>
           <LoadMoreData />
         </div>
         <TreeView menus={menus} />
